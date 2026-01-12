@@ -1,108 +1,211 @@
+# AP CSA Project: Weekly Data Analyzer  
+**Arrays & OOP Assessment**
 
-# AP CSA Project: Sales Data (Arrays Assessment)
+---
 
-## 📌 Overview
-This project will help you practice **arrays**, **loops**, and **object-oriented programming** in Java. You will create a class called **`SalesData`** that stores and analyzes a week’s worth of sales data, and then complete the **`Main`** class to test your work.
+## 📌 Project Overview
+
+In this project, you will design and build a **Weekly Data Analyzer** in Java. Your program will allow a user to enter **7 days of data** for something meaningful to them—such as steps taken, hours of sleep, money spent, mood ratings, screen time, or another approved idea.
+
+Your program will store this data in an **array**, analyze it using **array algorithms**, and present useful results to the user. You will apply **object-oriented programming (OOP)** principles by creating a custom data class that encapsulates both the data and the logic used to analyze it.
+
+This project simulates how developers build **reusable, well-structured code** that separates:
+- Data storage  
+- Data processing  
+- User interaction  
 
 ---
 
 ## 🎯 Learning Goals
-By completing this project, you will:
-- Declare and use **arrays** to store data.
-- Write methods that calculate **total**, **average**, **highest**, and **lowest** values.
-- Use **loops** for input, validation, and calculations.
-- Apply **encapsulation** (private instance variables, public methods).
-- Format output for readability (currency style).
+
+By completing this project, you will demonstrate that you can:
+
+- Declare and use arrays to store related data  
+- Use `for` and `while` loops for input, validation, and calculations  
+- Develop array algorithms (total, average, minimum, maximum, etc.)  
+- Apply encapsulation using private instance variables and public methods  
+- Design and use a custom class  
+- Write clean, readable Java code with clear method responsibilities  
+- Format output for readability  
 
 ---
 
-## 🧩 Project Requirements
+## 🧠 Choose Your Data Theme
 
-### **SalesData Class**
-- **Instance variable:**  
-  `sales` — an array of `double` (private)
-- **Constructor:**  
-  Accepts a `double[]` parameter, creates an internal array of the same size, and copies all elements.
-- **Methods:**  
-  - `getTotal()` → returns sum of all sales  
-  - `getAverage()` → returns average of all sales  
-  - `getHighest()` → returns highest sale  
-  - `getLowest()` → returns lowest sale  
-  - `toString()` → returns a multi-line string of all sales formatted as `$xx.xx`
+You may choose **any type of weekly data**, as long as it meets the project requirements.
 
-### **Main Class**
-- Create a `double[] weekSales` for **7 days**.
-- Use a **for loop** to collect input from the user.
-  - Validate input with a **while loop** (must be ≥ 0).
-- Create a `SalesData` object using `weekSales`.
-- Display (two decimal places):
-Total Sales:   $____
-Average Sales: $____
-Highest Sale:  $____
-Lowest Sale:   $____
+### Example Ideas  
+(You may use these or create your own)
 
-- Print all sales using `toString()`.
+- Step Counter (steps per day)  
+- Sleep Tracker (hours of sleep per night)  
+- Budget Analyzer (money spent per day)  
+- Study Time Tracker (minutes studied per day)  
+- Mood Tracker (ratings 1–10)  
+- Screen Time Tracker (hours per day)  
+
+📌 **Your teacher must approve your idea if it is not listed above.**
 
 ---
 
-## ✅ Checklist
-- [ ] `SalesData` compiles and includes all required methods.
-- [ ] Constructor **copies** array values (no reference aliasing).
-- [ ] Methods return correct values for typical and edge cases.
-- [ ] Output uses `$` and two decimal places.
-- [ ] Input validation prevents negative numbers.
+## 🧩 Program Structure & Requirements
+
+Your project must include **two main classes**.
 
 ---
 
-## 🛠 How to Run
-1. Clone this repository to your computer.
-2. Open the project in IntelliJ (or your preferred IDE).
-3. Implement the `SalesData` class first.
-4. Complete the `Main` class to test your code.
-5. Run `Main` and verify the output matches the required format.
+## 📦 Data Class (Your Custom Class)
+
+You may name this class based on your project theme  
+(e.g., `StepData`, `SleepData`, `BudgetData`, etc.)
+
+### 🔒 Instance Variables (private)
+
+- An array representing **7 days of data**
+- Additional instance variables as needed (e.g., total, min, max)
 
 ---
 
-## 🧪 Example Output
-Enter sales for day 1: 100
-Enter sales for day 2: 200
-Enter sales for day 3: 150
-Enter sales for day 4: 300
-Enter sales for day 5: 250
-Enter sales for day 6: 400
-Enter sales for day 7: 350
-Total Sales:   $1750.00
-Average Sales: $250.00
-Highest Sale:  $400.00
-Lowest Sale:   $100.00
-All Sales (by day):
-$100.00
-$200.00
-$150.00
-$300.00
-$250.00
-$400.00
-$350.00
+### 🏗 Constructor
+
+- Accepts an array as a parameter  
+- Creates an internal array of the same size  
+- Copies values into the internal array  
+
+⚠️ **Do NOT use reference aliasing**  
+(The internal array must be a deep copy.)
 
 ---
 
-## 🌟 Extension Ideas (Optional)
-- Add a method `getMedian()` or `getDayOfHighest()` (return index + 1).
-- Allow a variable number of days (prompt for length, then create array).
-- Show day names (Mon–Sun) in prompts and output.
+### ✅ Required Methods
+
+Your class **must** include methods that calculate:
+
+- `getTotal()`  
+- `getAverage()`  
+- `getHighest()` (maximum)  
+- `getLowest()` (minimum)  
+
+You may include additional methods if they make sense for your data.
 
 ---
 
-## 🧭 Grading Focus (Arrays)
-- Correct **array handling** and **loop logic**
-- Proper **encapsulation** (private array, public methods)
-- Accurate **calculations** and **formatted output**
-- Clean, readable code and good method design
+### 🖨 `toString()` Method
+
+- Returns a **multi-line `String`**
+- Displays all **7 days of data**
+- Values should be formatted **clearly and consistently**
 
 ---
 
-## 📄 Submission
-- Push your completed code to this repository.
-- Update this README with:
-  - Your name
-  - A short example output (copied from your run)
+## 🧪 Main Class (User Interaction & Testing)
+
+The `Main` class is responsible for:
+
+- Creating an array for **7 days of data**
+- Prompting the user for input using a `for` loop  
+- Validating input using a `while` loop (no invalid values allowed)  
+- Creating an object of your Data class  
+- Calling methods to display results clearly  
+
+---
+
+## 📋 Required Output
+
+Your program must display:
+
+- Total for the week  
+- Average per day  
+- Highest value  
+- Lowest value  
+- All daily values (using `toString()`)  
+
+All numeric output should be **formatted appropriately**  
+(e.g., two decimal places if needed).
+
+---
+
+## ✅ Project Checklist
+
+Before submitting, confirm that:
+
+- [ ] You used an array to store 7 days of data  
+- [ ] The array is private and encapsulated in a class  
+- [ ] All calculations use loops (no hard-coded math)  
+- [ ] Input is validated using a `while` loop  
+- [ ] Methods return correct results for typical and edge cases  
+- [ ] Output is clean, readable, and clearly labeled  
+- [ ] Code compiles and runs without errors  
+
+---
+
+## 🛠 How to Run the Project
+
+1. Clone this repository to your computer  
+2. Open the project in IntelliJ (or your preferred IDE)  
+3. Complete your **Data class** first  
+4. Implement the **Main class** to test your logic  
+5. Run the program and verify correct output  
+
+---
+
+## 🧪 Sample Output  
+### Example: Step Tracker
+Enter steps for day 1: 8500
+Enter steps for day 2: 10000
+Enter steps for day 3: 9200
+Enter steps for day 4: 11000
+Enter steps for day 5: 7000
+Enter steps for day 6: 12000
+Enter steps for day 7: 9800
+
+Weekly Summary:
+Total Steps: 66,500
+Average Steps: 9,500.00
+Highest Day: 12,000
+Lowest Day: 7,000
+
+All Daily Values:
+Day 1: 8,500
+Day 2: 10,000
+Day 3: 9,200
+Day 4: 11,000
+Day 5: 7,000
+Day 6: 12,000
+Day 7: 9,800
+
+
+---
+
+## 🌟 Optional Extensions (Extra Challenge)
+
+- Add a method like `getMedian()` or `getDayOfHighest()`  
+- Allow the user to choose the number of days  
+- Label days by name (Mon–Sun)  
+- Track multiple weeks using a **2D array**  
+- Add a simple menu system  
+
+---
+
+## 📄 Submission Instructions
+
+You must:
+
+- Push your completed code to this GitHub repository  
+- Update this README to include:
+  - Your name  
+  - Your chosen project theme  
+  - A short sample output from your program  
+
+---
+
+## 🧭 Grading Focus
+
+Your grade will focus on:
+
+- Correct and effective use of arrays  
+- Strong loop logic and algorithms  
+- Proper encapsulation and class design  
+- Accuracy of calculations  
+- Code readability and organization  
+
