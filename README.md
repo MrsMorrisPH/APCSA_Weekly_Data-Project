@@ -1,5 +1,4 @@
 # AP CSA Project: Weekly Data Analyzer  
-**Arrays & OOP Assessment**
 
 ---
 
@@ -21,10 +20,8 @@ This project simulates how developers build **reusable, well-structured code** t
 By completing this project, you will demonstrate that you can:
 
 - Declare and use arrays to store related data  
-- Use `for` and `while` loops for input, validation, and calculations  
 - Develop array algorithms (total, average, minimum, maximum, etc.)  
-- Apply encapsulation using private instance variables and public methods  
-- Design and use a custom class  
+- Apply encapsulation using private instance variables and public methods    
 - Write clean, readable Java code with clear method responsibilities  
 - Format output for readability  
 
@@ -43,8 +40,7 @@ You may choose **any type of weekly data**, as long as it meets the project requ
 - Study Time Tracker (minutes studied per day)  
 - Mood Tracker (ratings 1–10)  
 - Screen Time Tracker (hours per day)  
-
-📌 **Your teacher must approve your idea if it is not listed above.**
+- etc
 
 ---
 
@@ -118,7 +114,8 @@ Your program must display:
 - Average per day  
 - Highest value  
 - Lowest value  
-- All daily values (using `toString()`)  
+- All daily values (using `toString()`)
+- Valuable insights the user would want about their data
 
 All numeric output should be **formatted appropriately**  
 (e.g., two decimal places if needed).
@@ -132,17 +129,18 @@ Before submitting, confirm that:
 - [ ] You used an array to store 7 days of data  
 - [ ] The array is private and encapsulated in a class  
 - [ ] All calculations use loops (no hard-coded math)  
-- [ ] Input is validated using a `while` loop  
+- [ ] Input is validated using a `while` loop 
 - [ ] Methods return correct results for typical and edge cases  
 - [ ] Output is clean, readable, and clearly labeled  
-- [ ] Code compiles and runs without errors  
+- [ ] Code compiles and runs without errors
+- [ ] Code is appriately commented with JavaDoc comments 
 
 ---
 
 ## 🛠 How to Run the Project
 
-1. Clone this repository to your computer  
-2. Open the project in IntelliJ (or your preferred IDE)  
+1. Accept the assignment in GitHub classroom
+2. Open the project codespaces or clone repository using GitHub Deskopt / VS Code
 3. Complete your **Data class** first  
 4. Implement the **Main class** to test your logic  
 5. Run the program and verify correct output  
@@ -174,6 +172,9 @@ Day 5: 7,000
 Day 6: 12,000
 Day 7: 9,800
 
+Results:
+You met your goal 3 days this week!
+Next week, try to go for a walk after school
 
 ---
 
@@ -195,17 +196,7 @@ You must:
 - Update this README to include:
   - Your name  
   - Your chosen project theme  
-  - A short sample output from your program  
+  - A short description of your program
 
----
 
-## 🧭 Grading Focus
-
-Your grade will focus on:
-
-- Correct and effective use of arrays  
-- Strong loop logic and algorithms  
-- Proper encapsulation and class design  
-- Accuracy of calculations  
-- Code readability and organization  
 
